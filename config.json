@@ -1,0 +1,5 @@
+{
+    "SEPOLIAURL":"https://eth-sepolia.g.alchemy.com/v2/your-alchemy-client-id-here",
+    "PRIVKEY":"your-wallet-private key-here-for-generating-the-token",
+    "AdminAddress":"your-wallet=address-to-mine-the-initial-supply"
+}
