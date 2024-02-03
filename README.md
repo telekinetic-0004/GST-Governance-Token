@@ -4,57 +4,60 @@
 
 ## Existence on the sepolia testnet
 
- - [Contract Creation Proof](https://sepolia.etherscan.io/token/0x110Aa39698DFeee9B894AEe808929B87838e7174)
- - [Transaction Details](https://sepolia.etherscan.io/tx/0x2e34530d0a9da61efa335e987bcaad596c9304e887a5246dc98d94beb3bcd799)
- - [Block Creation Details](https://sepolia.etherscan.io/block/5202308)
+ - [`Contract Creation Proof`](https://sepolia.etherscan.io/token/0x110Aa39698DFeee9B894AEe808929B87838e7174)
+ - [`Transaction Details`](https://sepolia.etherscan.io/tx/0x2e34530d0a9da61efa335e987bcaad596c9304e887a5246dc98d94beb3bcd799)
+ - [`Block Creation Details`](https://sepolia.etherscan.io/block/5202308)
 
-## Features
+## `Audit Report`
+[`Click here - Audit Report (GST) - JayminSChandaria.pdf`](https://github.com/telekinetic-0004/GST-Governance-Token/blob/main/Audit%20Report%20(GST)%20-%20JayminSChandaria.pdf)
 
-- ERC-20 Token: Implements the basic ERC-20 token standards.
-- Pausable: Can be paused and unpaused by designated administrators.
-- Access Control: Uses OpenZeppelin's AccessControl to manage roles such as pauser and minter.
-- Permit Functionality: Implements ERC-20 permit for gasless transactions.
-- Voting System: Allows token holders to create and vote on proposals.
+## `Features`
 
-## Contract Structure
+- `ERC-20 Token:` `Implements the basic ERC-20 token standards.`
+- `Pausable: Can be paused and unpaused by designated administrators.`
+- `Access Control:` `Uses OpenZeppelin's AccessControl to manage roles such as pauser and minter.`
+- `Permit Functionality:` `Implements ERC-20 permit for gasless transactions.`
+- `Voting System:` `Allows token holders to create and vote on proposals.`
 
-- `GST.sol`: The main contract file containing the implementation.
-- `@openzeppelin/contracts`: External dependencies from OpenZeppelin.
+## `Contract Structure`
 
-## Roles
+- `GST.sol:` `The main contract file containing the implementation.`
+- `@openzeppelin/contracts:` `External dependencies from OpenZeppelin.`
 
-- `DEFAULT_ADMIN_ROLE`: has special permissions, such as granting and revoking roles.
-- `PAUSER_ROLE`: Allows an address to pause and unpause the contract.
-- `MINTER_ROLE`: Allows an address to mint new tokens.
+## `Roles`
 
-## Events
+- `DEFAULT_ADMIN_ROLE:` `has special permissions, such as granting and revoking roles.`
+- `PAUSER_ROLE:` `Allows an address to pause and unpause the contract.`
+- `MINTER_ROLE:` `Allows an address to mint new tokens.`
 
-- `Voted`: Triggered when a token holder casts a vote on a proposal.
-- `ProposalCreated`: Triggered when a new proposal is created.
-- `ProposalExecuted`: Triggered when a proposal is executed.
+## `Events`
 
-## Proposals
+- `Voted:` `Triggered when a token holder casts a vote on a proposal.`
+- `ProposalCreated:` `Triggered when a new proposal is created.`
+- `ProposalExecuted:` `Triggered when a proposal is executed.`
 
-- Proposals are created with a description and are voted on by token holders.
-- Each proposal tracks the number of votes in favor and against.
+## `Proposals`
+
+- `Proposals are created with a description and are voted on by token holders.`
+- `Each proposal tracks the number of votes in favor and against.`
 
 ## Functions
 
 #### Pausable Functions
 
-`pause()` - Pauses the contract, preventing token transfers.
+`pause()` - `Pauses the contract, preventing token transfers.`
 
-`unpause()` - Unpauses the contract, allowing token transfers.
+`unpause()` - `Unpauses the contract, allowing token transfers.`
 
 #### Mintable Functions
 
-`mint(address to, uint256 amount)` - Mints new tokens for the specified address.
+`mint(address to, uint256 amount)` - `Mints new tokens for the specified address.`
 
 #### Governance Functions
 
-`createProposal(string memory description)` - Creates a new proposal with the specified description.
+`createProposal(string memory description)` - `Creates a new proposal with the specified description.`
 
-`vote(uint256 proposalId, bool inSupport)` - Casts a vote on the specified proposal, either in favor or against it.
+`vote(uint256 proposalId, bool inSupport)` - `Casts a vote on the specified proposal, either in favor or against it.`
 
 ## Security
 #### `The contract uses OpenZeppelin's proven and audited library of smart contract components, which significantly reduces the risk of security vulnerabilities. However, it is still essential to follow best practices when deploying and using the contract, such as:`
