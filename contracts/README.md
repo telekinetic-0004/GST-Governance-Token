@@ -14,7 +14,7 @@
 `Go to the project directory`
 
 ```bash
-  cd my-project
+  cd GST-Governance-Token
 ```
 
 `Install hardhat`
