@@ -2,11 +2,11 @@
 
 ### `This Solidity smart contract implements the GirlScriptToken (GST), an ERC-20 governance token with features like pausability, access control, voting on proposals, and permit functionality.`
 
-## Existence on the sepolia testnet
+## Existence on the base-sepolia testnet
 
- - [`Contract Creation Proof`](https://sepolia.etherscan.io/token/0x110Aa39698DFeee9B894AEe808929B87838e7174)
- - [`Transaction Details`](https://sepolia.etherscan.io/tx/0x2e34530d0a9da61efa335e987bcaad596c9304e887a5246dc98d94beb3bcd799)
- - [`Block Creation Details`](https://sepolia.etherscan.io/block/5202308)
+ - [`Contract Creation Proof`](https://base-sepolia.blockscout.com/token/0xBEcABB09b7F19E24896f0dfcdC22B7122e0eB0e4)
+ - [`Transaction Details`](https://base-sepolia.blockscout.com/tx/0xf2df080cde9d052e8ba43606965fa0db6da592164be96f1209f23342634e9a5c)
+ - [`Block Creation Details`](https://base-sepolia.blockscout.com/block/5602892)
 
 ## `Audit Report`
 [`Click here - Audit Report (GST) - JayminSChandaria.pdf`](https://github.com/telekinetic-0004/GST-Governance-Token/blob/main/Audit%20Report%20(GST)%20-%20JayminSChandaria.pdf)
